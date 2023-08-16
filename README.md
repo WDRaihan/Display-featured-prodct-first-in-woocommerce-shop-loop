@@ -29,7 +29,7 @@ function custom_sort_products_by_featured( $q ) {
         $sorted_product_ids = sort_products_by_featured( $product_ids );
 
         $q->set( 'post__in', $sorted_product_ids );
-		$q->set( 'orderby', 'post__in' );
+	$q->set( 'orderby', 'post__in' );
     }
 }
 add_action( 'pre_get_posts', 'custom_sort_products_by_featured' );
