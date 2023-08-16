@@ -30,4 +30,4 @@ function custom_sort_products_by_featured( $q ) {
 		$q->set( 'orderby', 'post__in' );
     }
 }
-//add_action( 'pre_get_posts', 'custom_sort_products_by_featured' );
+add_action( 'pre_get_posts', 'custom_sort_products_by_featured' );
