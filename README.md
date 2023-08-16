@@ -1,6 +1,6 @@
-# Display-featured-product-first-in-woocommerce-shop-loop
+# Display featured product first in woocommerce shop loop
 Display all products and always show featured products first.
-
+```php
 // Modify product query to display featured products first
 // Function to get an array of all product IDs
 function get_all_product_ids() {
@@ -33,3 +33,4 @@ function custom_sort_products_by_featured( $q ) {
     }
 }
 add_action( 'pre_get_posts', 'custom_sort_products_by_featured' );
+```
